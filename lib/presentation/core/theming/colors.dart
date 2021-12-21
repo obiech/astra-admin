@@ -29,4 +29,5 @@ class AstraColors {
   static const Color darkWhite = Color.fromRGBO(206, 206, 206, 1);
   static const Color darken = Color.fromRGBO(85, 85, 85, 0.2);
   static const Color disableBtn = Color.fromRGBO(233, 233, 233, 1);
+  static const Color astroAdminPrimaryColor = Color.fromRGBO(100, 72, 33, 1);
 }

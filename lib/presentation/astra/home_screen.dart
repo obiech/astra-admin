@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
           currentIndex: tabsRouter.activeIndex,
           items: [
             NavigationBarItem(
-              icon: Icons.search,
+              icon: CupertinoIcons.person_add_solid,
             ),
             NavigationBarItem(
               icon: CupertinoIcons.person_2_fill,

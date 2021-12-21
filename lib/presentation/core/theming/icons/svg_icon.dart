@@ -9,7 +9,7 @@ class SvgIcon extends StatelessWidget {
   final double? height;
 
   static const String logo = 'assets/logo/logo.svg';
-  static const String logoWithText = 'assets/logo/logo_with_text.svg';
+  static const String logoWithText = 'assets/logo/logo_with_text_golden.svg';
   static const String profile = 'assets/icons/profile.svg';
 
   @override

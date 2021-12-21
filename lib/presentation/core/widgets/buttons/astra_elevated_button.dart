@@ -28,7 +28,7 @@ class AstraElevatedButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
           ),
           backgroundColor:
-              !isEnableButton ? AstraColors.disableBtn : AstraColors.blue,
+              !isEnableButton ? AstraColors.disableBtn : AstraColors.astroAdminPrimaryColor,
         ),
         onPressed: isEnableButton ? onClick : null,
         child: Padding(
