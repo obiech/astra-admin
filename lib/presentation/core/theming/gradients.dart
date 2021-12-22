@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Gradients {
-  static const List<Color> goldenGradient = [
+  static const List<Color> astroAdminPrimaryGradient = [
+    Color.fromRGBO(99, 72, 33, 1),
     Color.fromRGBO(217, 191, 131, 1),
-    Color.fromRGBO(99, 71, 32, 1),
   ];
 
   static const List<Color> blueGradient = [

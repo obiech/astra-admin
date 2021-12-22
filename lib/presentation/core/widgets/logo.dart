@@ -1,3 +1,4 @@
+import 'package:astra_admin_app/presentation/core/theming/colors.dart';
 import 'package:astra_admin_app/presentation/core/theming/gradients.dart';
 import 'package:astra_admin_app/presentation/core/theming/icons/svg_icon.dart';
 import 'package:flutter/material.dart';
@@ -9,16 +10,8 @@ class Logo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ShaderMask(
-      shaderCallback: (bounds) {
-        return const LinearGradient(
-          colors: Gradients.goldenGradient,
-          begin: Alignment.centerRight,
-          end: Alignment.centerLeft,
-        ).createShader(bounds);
-      },
-      child:
-          SvgIcon(asset: (logoWithText) ? SvgIcon.logoWithText : SvgIcon.logo),
-    );
+    return SvgIcon(
+        asset: (logoWithText) ? SvgIcon.logoWithText : SvgIcon.logo,color: AstraColors.white,
+        );
   }
 }

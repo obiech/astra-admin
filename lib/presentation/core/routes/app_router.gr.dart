@@ -9,11 +9,10 @@
 // **************************************************************************
 
 import 'package:auto_route/auto_route.dart' as _i10;
-import 'package:flutter/cupertino.dart' as _i23;
 import 'package:flutter/material.dart' as _i22;
 
-import '../../../infrastructure/chat/models/chat/chat.dart' as _i24;
-import '../../../infrastructure/chat/models/chat/message.dart' as _i25;
+import '../../../infrastructure/chat/models/chat/chat.dart' as _i23;
+import '../../../infrastructure/chat/models/chat/message.dart' as _i24;
 import '../../astra/favorite/favorite_screen.dart' as _i11;
 import '../../astra/home_screen.dart' as _i9;
 import '../../astra/message/chat_screen.dart' as _i15;
@@ -199,32 +198,37 @@ class AppRouter extends _i10.RootStackRouter {
       ];
 }
 
-/// generated route for [_i1.SplashScreen]
+/// generated route for
+/// [_i1.SplashScreen]
 class SplashScreenRoute extends _i10.PageRouteInfo<void> {
-  const SplashScreenRoute() : super(name, path: '/');
+  const SplashScreenRoute() : super(SplashScreenRoute.name, path: '/');
 
   static const String name = 'SplashScreenRoute';
 }
 
-/// generated route for [_i2.PhoneNumberScreen]
+/// generated route for
+/// [_i2.PhoneNumberScreen]
 class PhoneNumberScreenRoute extends _i10.PageRouteInfo<void> {
-  const PhoneNumberScreenRoute() : super(name, path: '/phone-number-screen');
+  const PhoneNumberScreenRoute()
+      : super(PhoneNumberScreenRoute.name, path: '/phone-number-screen');
 
   static const String name = 'PhoneNumberScreenRoute';
 }
 
-/// generated route for [_i3.HowToGetClubScreen]
+/// generated route for
+/// [_i3.HowToGetClubScreen]
 class HowToGetClubScreenRoute extends _i10.PageRouteInfo<void> {
   const HowToGetClubScreenRoute()
-      : super(name, path: '/how-to-get-club-screen');
+      : super(HowToGetClubScreenRoute.name, path: '/how-to-get-club-screen');
 
   static const String name = 'HowToGetClubScreenRoute';
 }
 
-/// generated route for [_i4.CodeScreen]
+/// generated route for
+/// [_i4.CodeScreen]
 class CodeScreenRoute extends _i10.PageRouteInfo<CodeScreenRouteArgs> {
-  CodeScreenRoute({_i23.Key? key, required String phoneNumber})
-      : super(name,
+  CodeScreenRoute({_i22.Key? key, required String phoneNumber})
+      : super(CodeScreenRoute.name,
             path: '/code-screen',
             args: CodeScreenRouteArgs(key: key, phoneNumber: phoneNumber));
 
@@ -234,7 +238,7 @@ class CodeScreenRoute extends _i10.PageRouteInfo<CodeScreenRouteArgs> {
 class CodeScreenRouteArgs {
   const CodeScreenRouteArgs({this.key, required this.phoneNumber});
 
-  final _i23.Key? key;
+  final _i22.Key? key;
 
   final String phoneNumber;
 
@@ -244,11 +248,12 @@ class CodeScreenRouteArgs {
   }
 }
 
-/// generated route for [_i5.PasswordScreen]
+/// generated route for
+/// [_i5.PasswordScreen]
 class PasswordScreenRoute extends _i10.PageRouteInfo<PasswordScreenRouteArgs> {
   PasswordScreenRoute(
-      {_i23.Key? key, required String phoneNumber, String? code})
-      : super(name,
+      {_i22.Key? key, required String phoneNumber, String? code})
+      : super(PasswordScreenRoute.name,
             path: '/password-screen',
             args: PasswordScreenRouteArgs(
                 key: key, phoneNumber: phoneNumber, code: code));
@@ -260,7 +265,7 @@ class PasswordScreenRouteArgs {
   const PasswordScreenRouteArgs(
       {this.key, required this.phoneNumber, this.code});
 
-  final _i23.Key? key;
+  final _i22.Key? key;
 
   final String phoneNumber;
 
@@ -272,14 +277,15 @@ class PasswordScreenRouteArgs {
   }
 }
 
-/// generated route for [_i6.ConfirmPasswordScreen]
+/// generated route for
+/// [_i6.ConfirmPasswordScreen]
 class ConfirmPasswordScreenRoute
     extends _i10.PageRouteInfo<ConfirmPasswordScreenRouteArgs> {
   ConfirmPasswordScreenRoute(
-      {_i23.Key? key,
+      {_i22.Key? key,
       required String phoneNumber,
       required String confirmePassword})
-      : super(name,
+      : super(ConfirmPasswordScreenRoute.name,
             path: '/confirm-password-screen',
             args: ConfirmPasswordScreenRouteArgs(
                 key: key,
@@ -293,7 +299,7 @@ class ConfirmPasswordScreenRouteArgs {
   const ConfirmPasswordScreenRouteArgs(
       {this.key, required this.phoneNumber, required this.confirmePassword});
 
-  final _i23.Key? key;
+  final _i22.Key? key;
 
   final String phoneNumber;
 
@@ -305,82 +311,94 @@ class ConfirmPasswordScreenRouteArgs {
   }
 }
 
-/// generated route for [_i7.StoreScreen]
+/// generated route for
+/// [_i7.StoreScreen]
 class StoreScreenRoute extends _i10.PageRouteInfo<void> {
-  const StoreScreenRoute() : super(name, path: '/store-screen');
+  const StoreScreenRoute()
+      : super(StoreScreenRoute.name, path: '/store-screen');
 
   static const String name = 'StoreScreenRoute';
 }
 
-/// generated route for [_i8.FinishRegisterScreen]
+/// generated route for
+/// [_i8.FinishRegisterScreen]
 class FinishRegisterScreenRoute extends _i10.PageRouteInfo<void> {
   const FinishRegisterScreenRoute()
-      : super(name, path: '/finish-register-screen');
+      : super(FinishRegisterScreenRoute.name, path: '/finish-register-screen');
 
   static const String name = 'FinishRegisterScreenRoute';
 }
 
-/// generated route for [_i9.HomeScreen]
+/// generated route for
+/// [_i9.HomeScreen]
 class HomeScreenRoute extends _i10.PageRouteInfo<void> {
   const HomeScreenRoute({List<_i10.PageRouteInfo>? children})
-      : super(name, path: '', initialChildren: children);
+      : super(HomeScreenRoute.name, path: '', initialChildren: children);
 
   static const String name = 'HomeScreenRoute';
 }
 
-/// generated route for [_i10.EmptyRouterPage]
+/// generated route for
+/// [_i10.EmptyRouterPage]
 class SearchRouter extends _i10.PageRouteInfo<void> {
   const SearchRouter({List<_i10.PageRouteInfo>? children})
-      : super(name, path: 'searche', initialChildren: children);
+      : super(SearchRouter.name, path: 'searche', initialChildren: children);
 
   static const String name = 'SearchRouter';
 }
 
-/// generated route for [_i11.FavoriteScreen]
+/// generated route for
+/// [_i11.FavoriteScreen]
 class FavoritesRouter extends _i10.PageRouteInfo<void> {
-  const FavoritesRouter() : super(name, path: '');
+  const FavoritesRouter() : super(FavoritesRouter.name, path: '');
 
   static const String name = 'FavoritesRouter';
 }
 
-/// generated route for [_i12.MessageScreen]
+/// generated route for
+/// [_i12.MessageScreen]
 class MessageRouter extends _i10.PageRouteInfo<void> {
   const MessageRouter({List<_i10.PageRouteInfo>? children})
-      : super(name, path: 'message', initialChildren: children);
+      : super(MessageRouter.name, path: 'message', initialChildren: children);
 
   static const String name = 'MessageRouter';
 }
 
-/// generated route for [_i10.EmptyRouterPage]
+/// generated route for
+/// [_i10.EmptyRouterPage]
 class SettingsRouter extends _i10.PageRouteInfo<void> {
   const SettingsRouter({List<_i10.PageRouteInfo>? children})
-      : super(name, path: 'settings', initialChildren: children);
+      : super(SettingsRouter.name, path: 'settings', initialChildren: children);
 
   static const String name = 'SettingsRouter';
 }
 
-/// generated route for [_i13.SearchScreen]
+/// generated route for
+/// [_i13.SearchScreen]
 class SearchScreenRoute extends _i10.PageRouteInfo<void> {
-  const SearchScreenRoute() : super(name, path: '');
+  const SearchScreenRoute() : super(SearchScreenRoute.name, path: '');
 
   static const String name = 'SearchScreenRoute';
 }
 
-/// generated route for [_i14.SearchDetailPage]
+/// generated route for
+/// [_i14.SearchDetailPage]
 class SearchDetailPageRoute extends _i10.PageRouteInfo<void> {
-  const SearchDetailPageRoute() : super(name, path: ':searchDetailPage');
+  const SearchDetailPageRoute()
+      : super(SearchDetailPageRoute.name, path: ':searchDetailPage');
 
   static const String name = 'SearchDetailPageRoute';
 }
 
-/// generated route for [_i15.MessageChatScreen]
+/// generated route for
+/// [_i15.MessageChatScreen]
 class MessageChatScreenRoute
     extends _i10.PageRouteInfo<MessageChatScreenRouteArgs> {
   MessageChatScreenRoute(
-      {_i23.Key? key,
-      required _i24.Chat chat,
-      required _i25.Message lastMessage})
-      : super(name,
+      {_i22.Key? key,
+      required _i23.Chat chat,
+      required _i24.Message lastMessage})
+      : super(MessageChatScreenRoute.name,
             path: '',
             args: MessageChatScreenRouteArgs(
                 key: key, chat: chat, lastMessage: lastMessage));
@@ -392,11 +410,11 @@ class MessageChatScreenRouteArgs {
   const MessageChatScreenRouteArgs(
       {this.key, required this.chat, required this.lastMessage});
 
-  final _i23.Key? key;
+  final _i22.Key? key;
 
-  final _i24.Chat chat;
+  final _i23.Chat chat;
 
-  final _i25.Message lastMessage;
+  final _i24.Message lastMessage;
 
   @override
   String toString() {
@@ -404,44 +422,54 @@ class MessageChatScreenRouteArgs {
   }
 }
 
-/// generated route for [_i16.ProfileScreen]
+/// generated route for
+/// [_i16.ProfileScreen]
 class ProfileScreenRoute extends _i10.PageRouteInfo<void> {
-  const ProfileScreenRoute() : super(name, path: '');
+  const ProfileScreenRoute() : super(ProfileScreenRoute.name, path: '');
 
   static const String name = 'ProfileScreenRoute';
 }
 
-/// generated route for [_i17.ShowImageFullScreen]
+/// generated route for
+/// [_i17.ShowImageFullScreen]
 class ShowImageFullScreenRoute extends _i10.PageRouteInfo<void> {
-  const ShowImageFullScreenRoute() : super(name, path: ':showImageFullScreen');
+  const ShowImageFullScreenRoute()
+      : super(ShowImageFullScreenRoute.name, path: ':showImageFullScreen');
 
   static const String name = 'ShowImageFullScreenRoute';
 }
 
-/// generated route for [_i18.ImagePickScreen]
+/// generated route for
+/// [_i18.ImagePickScreen]
 class ImagePickScreenRoute extends _i10.PageRouteInfo<void> {
-  const ImagePickScreenRoute() : super(name, path: ':imagePickScreen');
+  const ImagePickScreenRoute()
+      : super(ImagePickScreenRoute.name, path: ':imagePickScreen');
 
   static const String name = 'ImagePickScreenRoute';
 }
 
-/// generated route for [_i19.MyProfileScreen]
+/// generated route for
+/// [_i19.MyProfileScreen]
 class MyProfileScreenRoute extends _i10.PageRouteInfo<void> {
-  const MyProfileScreenRoute() : super(name, path: ':myProfileScreen');
+  const MyProfileScreenRoute()
+      : super(MyProfileScreenRoute.name, path: ':myProfileScreen');
 
   static const String name = 'MyProfileScreenRoute';
 }
 
-/// generated route for [_i20.AboutScreen]
+/// generated route for
+/// [_i20.AboutScreen]
 class AboutScreenRoute extends _i10.PageRouteInfo<void> {
-  const AboutScreenRoute() : super(name, path: ':aboutScreen');
+  const AboutScreenRoute() : super(AboutScreenRoute.name, path: ':aboutScreen');
 
   static const String name = 'AboutScreenRoute';
 }
 
-/// generated route for [_i21.SupportScreen]
+/// generated route for
+/// [_i21.SupportScreen]
 class SupportScreenRoute extends _i10.PageRouteInfo<void> {
-  const SupportScreenRoute() : super(name, path: ':supportScreen');
+  const SupportScreenRoute()
+      : super(SupportScreenRoute.name, path: ':supportScreen');
 
   static const String name = 'SupportScreenRoute';
 }

@@ -33,7 +33,8 @@ class NavigationBar extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(10),
       decoration: const BoxDecoration(
-        color: AstraColors.blue,
+        gradient: LinearGradient(
+          colors: Gradients.astroAdminPrimaryGradient, begin: Alignment.bottomRight, end: Alignment.topLeft),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(32),
           topRight: Radius.circular(32),
@@ -55,22 +56,15 @@ class NavigationBar extends StatelessWidget {
                   child: Row(
                     children: [
                       if (items.indexOf(item) == currentIndex)
-                        ShaderMask(
-                          shaderCallback: (Rect bounds) {
-                            return const LinearGradient(
-                                    colors: Gradients.goldenGradient)
-                                .createShader(bounds);
-                          },
-                          child: Icon(
-                            item.icon,
-                            color: AstraColors.golden,
-                            size: 26,
-                          ),
+                        Icon(
+                          item.icon,
+                          color: AstraColors.white,
+                          size: 26,
                         )
                       else
                         Icon(
                           item.icon,
-                          color: AstraColors.golden03,
+                          color: AstraColors.white03,
                           size: 26,
                         ),
                     ],

@@ -1,4 +1,5 @@
 import 'package:astra_admin_app/presentation/core/widgets/buttons/astra_elevated_button.dart';
+import 'package:astra_admin_app/presentation/core/widgets/buttons/astra_gradient_button.dart';
 import 'package:astra_admin_app/presentation/core/widgets/scaffolds/astra_appbar.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,8 @@ class ScreenContent extends StatelessWidget {
   /// A notification message to display.
   final Widget? notificationMessageContent;
 
+  final ButtonType type;
+
   final bool isEnableButton;
   const ScreenContent({
     Key? key,
@@ -27,6 +30,7 @@ class ScreenContent extends StatelessWidget {
     required this.clickButton,
     this.notificationMessageContent,
     this.onBackPresed,
+    this.type =ButtonType.waiting,
     this.isEnableButton = true,
   }) : super(key: key);
 

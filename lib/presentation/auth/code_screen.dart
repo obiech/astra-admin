@@ -49,6 +49,7 @@ class CodeScreen extends StatelessWidget {
                   const TimerTextWidget()
                 ],
               ),
+              
               isEnableButton: state.isEnableBtn,
               clickButton: () {
                 AutoRouter.of(context).replace(

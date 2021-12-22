@@ -69,7 +69,7 @@ class AstraGradientButton extends StatelessWidget {
               : null,
           gradient: (type != ButtonType.waiting)
               ? const LinearGradient(
-                  colors: Gradients.blueGradient,
+                  colors: Gradients.astroAdminPrimaryGradient,
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
                   tileMode: TileMode.decal,
