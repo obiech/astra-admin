@@ -40,7 +40,6 @@ class _AstraCustomTextFieldState extends State<AstraCustomTextField> {
               suffixIcon: SizedBox(
                 width: MediaQuery.of(context).size.width / 2.9,
                 child: TextFormField(
-                  maxLength: 4,
                   style: const TextStyle(fontSize: 24),
                   keyboardType: TextInputType.number,
                   decoration:  InputDecoration(

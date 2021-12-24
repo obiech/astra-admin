@@ -23,6 +23,7 @@ class _AstraTextFieldState extends State<AstraTextField> {
             constraints: BoxConstraints(minHeight: size.height/12.8),
             hintText: widget.hintText,
             hintStyle: AppTheme.lightTheme.inputDecorationTheme.hintStyle,
-            suffixIcon: const Icon(Icons.error)));
+            // suffixIcon: const Icon(Icons.error),
+            ));
   }
 }
