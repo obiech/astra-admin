@@ -1,3 +1,4 @@
+import 'package:astra_admin_app/presentation/core/theming/colors.dart';
 import 'package:astra_admin_app/presentation/core/theming/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -16,13 +17,13 @@ class _AstraTextFieldState extends State<AstraTextField> {
     Size size = MediaQuery.of(context).size;
  
     return TextFormField(
+      style:const TextStyle(color:AstraColors.black),
       maxLines: null,
       controller: widget.controller,
         decoration: InputDecoration(
             isDense: true,
             constraints: BoxConstraints(minHeight: size.height/12.8),
             hintText: widget.hintText,
-            hintStyle: AppTheme.lightTheme.inputDecorationTheme.hintStyle,
             // suffixIcon: const Icon(Icons.error),
             ));
   }

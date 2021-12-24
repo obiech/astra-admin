@@ -10,36 +10,25 @@ class AppTheme {
       textTheme: _lightTextTheme(base.textTheme),
       inputDecorationTheme:
           _lightInputDecorationTheme(base.inputDecorationTheme),
-      // appBarTheme: _lightAppBarTheme(base.appBarTheme),
-      // backgroundColor: textWhait,
-      // accentColor: textBlack,
-      // scaffoldBackgroundColor: textWhait,
-      // cardTheme: _lightCardTheme(base.cardTheme),
-      // bottomNavigationBarTheme: base.bottomNavigationBarTheme.copyWith(
-      //   selectedItemColor: Colors.green,
-      //   selectedLabelStyle: TextStyle(color: Colors.green),
-      //   unselectedItemColor: Colors.grey,
-      //   selectedIconTheme: base.iconTheme.copyWith(
-      //     color: Colors.green,
-      //   ),
-      // ),
-
-      //_lightBarThemeData(base.bottomNavigationBarTheme),
-      //textTheme: _lightTextTheme(base.textTheme),
+      appBarTheme: _lightAppBarTheme(base.appBarTheme),
+      textSelectionTheme:const TextSelectionThemeData(cursorColor: AstraColors.black,),
     );
   }
 
   static _lightTextTheme(TextTheme baseTextTheme) {
     return baseTextTheme.copyWith(
       headline5: const TextStyle(
+        fontFamily: 'Manrope',
         fontWeight: FontWeight.w600,
         fontSize: 28,
       ),
       subtitle1: const TextStyle(
+        fontFamily: 'Manrope',
         fontWeight: FontWeight.w600,
         fontSize: 17,
       ),
       caption: const TextStyle(
+        fontFamily: 'Manrope',
           fontWeight: FontWeight.w600, fontSize: 12, color: AstraColors.grey),
     );
   }
@@ -48,15 +37,21 @@ class AppTheme {
     return inputDecorationTheme.copyWith(
       hintStyle: const TextStyle(
           fontWeight: FontWeight.w600, fontSize: 12, color: AstraColors.grey),
+      focusColor: Colors.black
     );
   }
 
-  // static _lightAppBarTheme(AppBarTheme appBarTheme) {
-  //   return appBarTheme.copyWith(
-  //     backgroundColor: AstraColors.white,
-  //     elevation: 0,
-  //     centerTitle: true,
-  //     titleTextStyle: lightTheme.textTheme.subtitle1?.copyWith(color: AstraColors.gray)
-  //   );
-  // }
+  static _lightAppBarTheme(AppBarTheme appBarTheme) {
+    return appBarTheme.copyWith(
+      backgroundColor: AstraColors.white,
+      elevation: 0,
+      centerTitle: true,
+      titleTextStyle:const TextStyle(
+        fontFamily: 'Manrope',
+        fontWeight: FontWeight.w600,
+        fontSize: 17,
+        color: AstraColors.gray
+      ),
+    );
+  }
 }

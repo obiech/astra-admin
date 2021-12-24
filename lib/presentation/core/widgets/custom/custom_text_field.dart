@@ -1,4 +1,5 @@
 import 'package:astra_admin_app/presentation/auth/constants/constants.dart';
+import 'package:astra_admin_app/presentation/core/theming/colors.dart';
 import 'package:astra_admin_app/presentation/core/theming/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -28,27 +29,26 @@ class _AstraCustomTextFieldState extends State<AstraCustomTextField> {
       children: [
         TextFormField(
           keyboardType: TextInputType.number,
-            cursorColor: Colors.blue,
             controller: widget.phoneController,
-            style: const TextStyle(fontSize: 24),
+            style: const TextStyle(color:AstraColors.black),
             inputFormatters: [maskFormatter],
               autofocus: true,
-            decoration: InputDecoration(
+            decoration: InputDecoration(isDense: true,
+            // constraints: BoxConstraints(minHeight: size.height/12.8),
+
 
               hintText: 'Номер телефона',
-              hintStyle:AppTheme.lightTheme.inputDecorationTheme.hintStyle,
               suffixIcon: SizedBox(
                 width: MediaQuery.of(context).size.width / 2.9,
                 child: TextFormField(
-                  style: const TextStyle(fontSize: 24),
+                  style: const TextStyle(color:AstraColors.black),
                   keyboardType: TextInputType.number,
                   decoration:  InputDecoration(
                       hintText: 'Код из смс',
-                      hintStyle:AppTheme.lightTheme.inputDecorationTheme.hintStyle,
                       focusedBorder: InputBorder.none,
-                      prefixIcon:const Text(
+                      prefixIcon: Text(
                         '|',
-                        style: TextStyle(fontSize: 44),
+                        style: TextStyle(fontSize: size.height/27.8),
                       ),
                       // suffixIcon:const Icon(Icons.cancel),
                       ),

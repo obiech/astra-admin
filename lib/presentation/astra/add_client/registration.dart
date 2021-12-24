@@ -50,20 +50,15 @@ class _ClientRegistrationState extends State<ClientRegistration> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        leading: const Padding(
-          padding: EdgeInsets.only(left: 8.0),
-          child: Icon(
+        leading: Padding(
+          padding: EdgeInsets.only(left:size.width / 11.36),
+          child:const Icon(
             Icons.arrow_back,
             color: Colors.black,
           ),
         ),
-        backgroundColor: AstraColors.white,
-        elevation: 0,
-        centerTitle: true,
-        title: Text('Добавление клиента',
-            style: AppTheme.lightTheme.textTheme.subtitle1
-                ?.copyWith(color: Colors.black)),
-      ),
+        title:const Text('Добавление клиента',
+      )),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         padding: EdgeInsets.symmetric(horizontal: size.width / 11.36),

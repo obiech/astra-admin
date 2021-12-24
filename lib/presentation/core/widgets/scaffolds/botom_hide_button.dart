@@ -21,7 +21,7 @@ class BottomHideBar extends StatelessWidget {
             topRight: Radius.circular(40),
           ),
           gradient: const LinearGradient(
-            colors: Gradients.blueGradient,
+            colors: Gradients.astroAdminPrimaryGradient,
           ),
         ),
         child: const Divider(
