@@ -1,3 +1,4 @@
+import 'package:astra_admin_app/presentation/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -7,6 +8,8 @@ class AppTheme {
     final ThemeData base = ThemeData.light();
     return base.copyWith(
       textTheme: _lightTextTheme(base.textTheme),
+      inputDecorationTheme:
+          _lightInputDecorationTheme(base.inputDecorationTheme),
       // appBarTheme: _lightAppBarTheme(base.appBarTheme),
       // backgroundColor: textWhait,
       // accentColor: textBlack,
@@ -27,6 +30,33 @@ class AppTheme {
   }
 
   static _lightTextTheme(TextTheme baseTextTheme) {
-    return baseTextTheme.copyWith();
+    return baseTextTheme.copyWith(
+      headline5: const TextStyle(
+        fontWeight: FontWeight.w600,
+        fontSize: 28,
+      ),
+      subtitle1: const TextStyle(
+        fontWeight: FontWeight.w600,
+        fontSize: 17,
+      ),
+      caption: const TextStyle(
+          fontWeight: FontWeight.w600, fontSize: 12, color: AstraColors.grey),
+    );
   }
+
+  static _lightInputDecorationTheme(InputDecorationTheme inputDecorationTheme) {
+    return inputDecorationTheme.copyWith(
+      hintStyle: const TextStyle(
+          fontWeight: FontWeight.w600, fontSize: 12, color: AstraColors.grey),
+    );
+  }
+
+  // static _lightAppBarTheme(AppBarTheme appBarTheme) {
+  //   return appBarTheme.copyWith(
+  //     backgroundColor: AstraColors.white,
+  //     elevation: 0,
+  //     centerTitle: true,
+  //     titleTextStyle: lightTheme.textTheme.subtitle1?.copyWith(color: AstraColors.gray)
+  //   );
+  // }
 }

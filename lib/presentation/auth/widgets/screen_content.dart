@@ -1,3 +1,4 @@
+import 'package:astra_admin_app/presentation/core/theming/themes/app_theme.dart';
 import 'package:astra_admin_app/presentation/core/widgets/buttons/astra_elevated_button.dart';
 import 'package:astra_admin_app/presentation/core/widgets/buttons/astra_gradient_button.dart';
 import 'package:astra_admin_app/presentation/core/widgets/scaffolds/astra_appbar.dart';
@@ -52,10 +53,7 @@ class ScreenContent extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: Theme.of(context).textTheme.headline5!.copyWith(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 28,
-                        ),
+                    style: AppTheme.lightTheme.textTheme.headline5
                   ),
                   const SizedBox(height: 60),
                   Column(

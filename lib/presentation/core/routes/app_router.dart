@@ -1,3 +1,4 @@
+import 'package:astra_admin_app/presentation/astra/add_client/registration.dart';
 import 'package:astra_admin_app/presentation/astra/favorite/favorite_screen.dart';
 import 'package:astra_admin_app/presentation/astra/home_screen.dart';
 import 'package:astra_admin_app/presentation/astra/message/chat_screen.dart';
@@ -36,13 +37,13 @@ import 'package:auto_route/auto_route.dart';
       page: HomeScreen,
       children: [
         AutoRoute(
-          path: 'searche',
-          name: 'SearchRouter',
-          page: EmptyRouterPage,
-          children: [
-            AutoRoute(path: '', page: SearchScreen),
-            AutoRoute(path: ':searchDetailPage', page: SearchDetailPage),
-          ],
+          path: 'clientRegistration',
+          name: 'ClientRegistrationRouter',
+          page: ClientRegistration,
+          // children: [
+          //   AutoRoute(path: '', page: ClientRegistration),
+          //   // AutoRoute(path: ':searchDetailPage', page: SearchDetailPage),
+          // ],
         ),
         AutoRoute(
           path: '',

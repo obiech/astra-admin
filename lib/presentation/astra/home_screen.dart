@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
     return AutoTabsScaffold(
       extendBody: true,
       routes: const [
-        SearchRouter(),
+        ClientRegistrationRouter(),
         FavoritesRouter(),
         MessageRouter(),
         SettingsRouter()

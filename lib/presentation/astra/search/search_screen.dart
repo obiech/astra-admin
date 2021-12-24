@@ -52,8 +52,8 @@ class SearchScreen extends StatelessWidget {
                     ),
                     InfoButton(
                       onTap: () {
-                        AutoRouter.of(context)
-                            .push(const SearchDetailPageRoute());
+                        // AutoRouter.of(context)
+                        //     .push(const SearchDetailPageRoute());
                       },
                       icon: Icons.check,
                       height: 16,

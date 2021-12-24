@@ -24,7 +24,7 @@ class AstraApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp.router(
-        theme: AppTheme.lightTheme,
+        // theme: AppTheme.lightTheme,
         routerDelegate: _appRouter.delegate(),
         routeInformationParser: _appRouter.defaultRouteParser(),
         debugShowCheckedModeBanner: false,
