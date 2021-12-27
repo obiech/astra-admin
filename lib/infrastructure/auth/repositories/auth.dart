@@ -1,4 +1,4 @@
-import 'package:astra_admin_app/infrastructure/core/helpers/endpoints.dart';
+import 'package:astra_admin_app/infrastructure/core/helpers/endpoint/endpoints.dart';
 import 'package:dio/dio.dart';
 import 'dart:developer';
 

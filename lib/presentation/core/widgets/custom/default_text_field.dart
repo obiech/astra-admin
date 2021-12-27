@@ -2,16 +2,16 @@ import 'package:astra_admin_app/presentation/core/theming/colors.dart';
 import 'package:astra_admin_app/presentation/core/theming/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 
-class AstraTextField extends StatefulWidget {
+class DefaultTextField extends StatefulWidget {
   final String hintText;
   final TextEditingController controller;
-  const AstraTextField({Key? key, required this.hintText, required this.controller}) : super(key: key);
+  const DefaultTextField({Key? key, required this.hintText, required this.controller}) : super(key: key);
 
   @override
-  _AstraTextFieldState createState() => _AstraTextFieldState();
+  _DefaultTextFieldState createState() => _DefaultTextFieldState();
 }
 
-class _AstraTextFieldState extends State<AstraTextField> {
+class _DefaultTextFieldState extends State<DefaultTextField> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

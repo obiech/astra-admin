@@ -1,14 +1,11 @@
 import 'dart:io';
 
-import 'package:astra_admin_app/presentation/core/theming/themes/app_theme.dart';
 import 'package:astra_admin_app/presentation/core/widgets/buttons/astra_gradient_button.dart';
 import 'package:astra_admin_app/presentation/core/widgets/custom/custom_dropdown_button.dart';
 import 'package:astra_admin_app/presentation/core/widgets/custom/custom_text_field.dart';
 import 'package:astra_admin_app/presentation/core/theming/colors.dart';
-import 'package:astra_admin_app/presentation/core/widgets/custom/text_field.dart';
-import 'package:astra_admin_app/presentation/core/widgets/scaffolds/astra_appbar.dart';
+import 'package:astra_admin_app/presentation/core/widgets/custom/default_text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:dropdown_button2/dropdown_button2.dart';
 
 class ClientRegistration extends StatefulWidget {
   const ClientRegistration({Key? key}) : super(key: key);
@@ -75,26 +72,26 @@ class _ClientRegistrationState extends State<ClientRegistration> {
               SizedBox(
                 height: size.height / 14.5,
               ),
-              AstraTextField(
+              DefaultTextField(
                 hintText: 'Имя',
                 controller: nameController,
               ),
-              AstraTextField(
+              DefaultTextField(
                 hintText: 'Фамилия',
                 controller: surnameController,
               ),
-              AstraTextField(
+              DefaultTextField(
                 hintText: 'Дата рождения',
                 controller: dateOfBirthController,
               ),
               SizedBox(
                 height: size.height / 13.3,
               ),
-              AstraTextField(
+              DefaultTextField(
                 hintText: 'Страна проживания',
                 controller: countryController,
               ),
-              AstraTextField(
+              DefaultTextField(
                 hintText: 'Город проживания',
                 controller: cityController,
               ),
@@ -111,7 +108,7 @@ class _ClientRegistrationState extends State<ClientRegistration> {
                   ),
                   SizedBox(width: size.width / 46.8),
                   Expanded(
-                    child: AstraTextField(
+                    child: DefaultTextField(
                       controller: heightController,
                       hintText: 'Рост',
                     ),
@@ -124,7 +121,7 @@ class _ClientRegistrationState extends State<ClientRegistration> {
               const AstraDropDownButton(
                   hintText: 'Наличие детей', items: ['Детей нет', 'Дети есть']),
               SizedBox(height: size.height / 5.76),
-              AstraTextField(
+              DefaultTextField(
                 hintText: 'Краткая информация',
                 controller: briefInformationController,
               ),

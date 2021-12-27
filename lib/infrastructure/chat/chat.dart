@@ -2,7 +2,7 @@ import 'package:astra_admin_app/infrastructure/chat/models/chat/chat.dart';
 import 'package:astra_admin_app/infrastructure/chat/models/chat/message.dart';
 import 'dart:math' as math;
 import 'package:dio/dio.dart';
-import 'package:astra_admin_app/infrastructure/core/helpers/endpoints.dart';
+import 'package:astra_admin_app/infrastructure/core/helpers/endpoint/endpoints.dart';
 import 'dart:developer';
 
 const _chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890';
